@@ -133,7 +133,7 @@ Download_aria2_conf() {
     PROFILE_URL1="https://p3terx.github.io/aria2.conf"
     PROFILE_URL2="https://aria2c.now.sh"
     PROFILE_URL3="https://github.guanmengkai.bf/https://raw.githubusercontent.com/P3TERX/aria2.conf/master"
-		PROFILE_URL4="https://gh.301.ee/https://raw.githubusercontent.com/P3TERX/aria2.conf/master"
+    PROFILE_URL4="https://gh.301.ee/https://raw.githubusercontent.com/P3TERX/aria2.conf/master"
     PROFILE_LIST="
 aria2.conf
 clean.sh

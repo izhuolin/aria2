@@ -77,7 +77,7 @@ check_pid() {
 check_new_ver() {
     aria2_new_ver=$(
         {
-            wget -t2 -T3 -qO- "https://api.github.com/repos/P3TERX/Aria2-Pro-Core/releases/latest" ||
+            wget -t2 -T3 -qO- "https://gh.301.ee/https://raw.githubusercontent.com/P3TERX/Aria2-Pro-Core/releases/latest" ||
                 wget -t2 -T3 -qO- "https://gh-api.p3terx.com/repos/P3TERX/Aria2-Pro-Core/releases/latest"
         } | grep -o '"tag_name": ".*"' | head -n 1 | cut -d'"' -f4
     )

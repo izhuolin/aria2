@@ -1,9 +1,15 @@
 系统要求
+
 CentOS 6+ / Debian 6+ / Ubuntu 14.04+
+
 安装脚本
+
 wget -N https://mirror.ghproxy.com/https://raw.githubusercontent.com/P3TERX/aria2.sh/master/aria2.sh && chmod +x aria2.sh
+
 运行脚本
+
 ./aria2.sh
+
 其他操作
 
 启动：/etc/init.d/aria2 start | service aria2 start

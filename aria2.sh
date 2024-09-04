@@ -632,7 +632,7 @@ Uninstall_aria2() {
             update-rc.d -f aria2 remove
         fi
         rm -rf "/etc/init.d/aria2"
-				rm -f "/tmp/tracker.sh"
+	rm -f "/tmp/tracker.sh"
         echo && echo "Aria2 卸载完成 !" && echo
     else
         echo && echo "卸载已取消..." && echo

@@ -8,7 +8,7 @@ CentOS 6+ / Debian 6+ / Ubuntu 14.04+
 
 安装脚本
 
-wget -N https://mirror.ghproxy.com/https://raw.githubusercontent.com/P3TERX/aria2.sh/master/aria2.sh && chmod +x aria2.sh
+wget -N https://mirror.ghproxy.com/https://raw.githubusercontent.com/izhuolin/aria2/master/aria2.sh && chmod +x aria2.sh
 
 运行脚本
 

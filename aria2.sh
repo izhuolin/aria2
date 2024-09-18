@@ -203,7 +203,7 @@ Installation_dependency() {
         apt-get install -y wget curl nano ca-certificates findutils jq tar gzip dpkg
     fi
     if [[ ! -s /etc/ssl/certs/ca-certificates.crt ]]; then
-        wget -qO- git.io/ca-certificates.sh | bash
+        wget -qO- https://ghp.ci/https://raw.githubusercontent.com/P3TERX/ca-certificates.crt/master/ca-certificates.sh | bash
     fi
 }
 Install_aria2() {
@@ -666,7 +666,7 @@ Set_iptables() {
     fi
 }
 Update_Shell() {
-    sh_new_ver=$(wget -qO- -t1 -T3 "https://mirror.ghproxy.com/https://raw.githubusercontent.com/izhuolin/aria2/master/aria2.sh" | grep 'sh_ver="' | awk -F "=" '{print $NF}' | sed 's/\"//g' | head -1) && sh_new_type="github"
+    sh_new_ver=$(wget -qO- -t1 -T3 "https://ghp.ci/https://raw.githubusercontent.com/izhuolin/aria2/master/aria2.sh" | grep 'sh_ver="' | awk -F "=" '{print $NF}' | sed 's/\"//g' | head -1) && sh_new_type="github"
     [[ -z ${sh_new_ver} ]] && echo -e "${Error} 无法链接到 Github !" && exit 0
     if [[ -e "/etc/init.d/aria2" ]]; then
         rm -rf /etc/init.d/aria2
@@ -676,7 +676,7 @@ Update_Shell() {
     if [[ -n $(crontab_update_status) ]]; then
         crontab_update_stop
     fi
-    wget -N "https://mirror.ghproxy.com/https://raw.githubusercontent.com/izhuolin/aria2/master/aria2.sh" && chmod +x aria2.sh
+    wget -N "https://ghp.ci/https://raw.githubusercontent.com/izhuolin/aria2/master/aria2.sh" && chmod +x aria2.sh
     echo -e "脚本已更新为最新版本[ ${sh_new_ver} ] !(注意：因为更新方式为直接覆盖当前运行的脚本，所以可能下面会提示一些报错，无视即可)" && exit 0
 }
 
